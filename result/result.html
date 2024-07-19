@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"></meta>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <link href="../styles/resultStyles.css" rel="stylesheet" type="text/css" />
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script type="module" src="getUserResult.js"></script>
+        <script type="module" src="writeBarChart.js"></script>
+        <script>
+            // 如果沒有query則跳轉回到測驗。    
+            if(!location.href.includes('ver')) location.href = "../main/index.html";
+        </script>
+        <title>價值觀卡牌測驗結果 – Meetype</title>
+    </head>
+    <body>
+        <div id="title"><h1 class="heading">您的價值觀卡牌測驗結果</h1></div>
+        <div id="content">
+            
+            <div id="read_more_block" >
+                <div id="related_articles">
+                    <h4>相關文章</h4>
+                    <ul>
+                        <li><a href="https://meetype.com/topic/enneagram">九型人格相關文章</a></li>
+                        <li><a href="https://meetype.com/enneagram-type-description">九型人格描述</a></li>
+                    </ul>
+                </div>
+                <div id="other_tests">
+                    <h4>其他測驗</h4>
+                    <ul>
+                        <li><a href="https://meetype.com/enneagram-test">深度版九型人格測驗</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
